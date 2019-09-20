@@ -1,0 +1,14 @@
+.map-title { 
+    transform: translate(-50%,0%);
+    position: fixed !important;
+    top:-15px;
+    left: 50%;
+    text-align: center;
+    padding-left: 30px; 
+    padding-right: 30px; 
+    background: white;
+    opacity: 0.7;	
+    font-weight: bold;
+    font-size: 50px;
+ border-radius: 0px 0px 50px 50px;
+  }

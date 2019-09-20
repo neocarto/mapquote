@@ -1,0 +1,71 @@
+library(leaflet)
+library(bibtex)
+library(RefManageR)
+library(htmltools)
+library(htmlwidgets)
+
+# https://rstudio.github.io/leaflet/markers.html
+
+# DATA IMPORT
+
+bib <- ReadBib(file = "../data/biblio.bib")
+bib <- as.data.frame(bib)
+bib$id <- row.names(bib)
+bib$author <- sub("\\}", "", bib$author)
+bib$author <- sub("\\{", "", bib$author)
+
+q <- read.csv("../data/quotes.csv", stringsAsFactors=FALSE) 
+loc <- read.csv("../data/authors.csv", stringsAsFactors=FALSE) 
+quotes <- merge(x = q, y = bib, by.x = "book", by.y = "id", all.y=T)
+quotes <- merge(x = quotes, y = loc, by.x = "author", by.y = "author", all.y=T)
+
+words <- read.csv("../data/words.csv", stringsAsFactors=FALSE)
+words <- words$words
+
+# POPUP FORMATING
+
+
+
+col <- "#fce303"
+for (i in 1:length(words)){
+  quotes$quote <- sub(paste0(" ",words[i]," "), paste0(" <span style='background:",col,"'>",words[i],"</span> </u>"), quotes$quote)
+  quotes$quote <- sub(paste0(" ",words[i],"\\,"), paste0(" <span style='background:",col,"'>",words[i],"</span>,</u>"), quotes$quote)
+  quotes$quote <- sub(paste0(" ",words[i],"\\."), paste0(" <span style='background:",col,"'>",words[i],"</span>.</u>"), quotes$quote)
+  }
+
+
+quotes$labelhtml <- paste0(
+  "<div width='300px' align='center'>",
+  "<h2>",
+  "« ",quotes$quote," »",
+  "</h2>",
+ "<b>",quotes$author,"</b> ",quotes$location,".<br/>",
+ "<i>",quotes$title,"</i>. ",quotes$publisher,", ",quotes$year,".",
+ "</div>"
+)
+
+# TITLE
+
+
+title <- tags$div(includeCSS("../css/maptitle.css"), HTML("<i>MapQuote</i>"))  
+source <- tags$div(includeCSS("../css/mapnote.css"), HTML(paste0("Data & Map designed by <b>Nicolas Lambert</b> & <b>Françoise Bahoken</b>. Last update: ",Sys.Date())))
+contrib <- tags$div(includeCSS("../css/contrib.css"), HTML("<a href='mailto:nicolas.lambert@cnrs.fr?subject=[MapQuote]&cc=frcse_bhk@yahoo.fr&body=Merci de référencer très précisément la citation que vous souhaitez ajouter. Celle-ci sera intégrée à la carte lors de la prochaine mise à jour.<br/><br/>Titre du livre : <br/>Auteur : <br/>Année de parution : <br/>Editeur : <br/>Citation : '><img src='img/contribuez.svg'></img></a>"))  
+
+
+# PIN
+
+pins <- makeIcon(
+  iconUrl = "../img/pin.svg",
+  iconWidth = 30, iconHeight = 30,
+  iconAnchorX = 15, iconAnchorY = 15
+)
+
+m <- leaflet(quotes) %>%
+  addProviderTiles(providers$Esri.WorldImagery) %>%
+  addMarkers(~lng, ~lat, popup = ~labelhtml, clusterOptions = markerClusterOptions(), icon = pins ) %>%
+  addScaleBar(position = "bottomleft") %>%
+  addControl(title, className="map-title") %>%
+  addControl(source, className="map-note") %>%
+  addControl(contrib, className="map-contrib")
+m
+
