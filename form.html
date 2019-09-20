@@ -1,11 +1,44 @@
-<form action="https://formspree.io/nicolas.lambert@cnrs.fr" method="POST">
-  <input type="text" name="name">
-  <input type="email" name="_replyto">
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/form.css"/>
+</head>
+<body>
+<div class="container">  
+    <form action="https://formspree.io/nicolas.lambert@cnrs.fr" method="POST" id="contact"/>
+
+    <h3>Merci de référencer très précisément la citation que vous souhaitez ajouter à <b>MapQuote</b>.</h3>
+    <h4>(Elle sera visible lors de la prochaine mise à jour)</h4>
     <fieldset>
-      <input placeholder="Titre du livre" type="text" required autofocus>
+      <input placeholder="Titre du livre" name="title" type="text" tabindex="1" required autofocus>
     </fieldset>
     <fieldset>
-      <textarea placeholder="Copiez votre citation ici" required></textarea>
+      <input placeholder="Auteur" name="author" type="text" tabindex="2" required>
     </fieldset>
-  <input type="submit" value="Send">
-</form>
+    <fieldset>
+      <input placeholder="Année de parution (optionnel)" name="year" type="text" tabindex="3">
+    </fieldset>
+    <fieldset>
+      <input placeholder="Editeur (optionnel)" name="editor" type="text" tabindex="4">
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Copiez votre citation ici" name="quote" tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit">Envoyer</button>
+    </fieldset>
+    <p class="copyright">Voir la carte interactive sur <a href="https://neocarto.github.io/mapquote/" target="_blank" title="mapqoute">neocarto.github.io/mapquote</a></p>
+    <p class="copyright">Formulaire web conçu par <a href="https://colorlib.com" target="_blank">Colorlib</a> et <a href="https://formspree.io/" target="_blank">formspree.io</a></p>
+  </form>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
