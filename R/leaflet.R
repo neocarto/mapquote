@@ -49,7 +49,7 @@ quotes$labelhtml <- paste0(
 
 title <- tags$div(includeCSS("../css/maptitle.css"), HTML("<i>MapQuote</i>"))  
 source <- tags$div(includeCSS("../css/mapnote.css"), HTML(paste0("Data & Map designed by <b>Nicolas Lambert</b> & <b>Françoise Bahoken</b>. Last update: ",Sys.Date())))
-contrib <- tags$div(includeCSS("../css/contrib.css"), HTML("<a href='mailto:nicolas.lambert@cnrs.fr?subject=[MapQuote]&cc=frcse_bhk@yahoo.fr&body=Merci de référencer très précisément la citation que vous souhaitez ajouter. Celle-ci sera intégrée à la carte lors de la prochaine mise à jour.<br/><br/>Titre du livre : <br/>Auteur : <br/>Année de parution : <br/>Editeur : <br/>Citation : '><img src='img/contribuez.svg'></img></a>"))  
+contrib <- tags$div(includeCSS("../css/contrib.css"), HTML("<a href='form.html' target='_blank'><img src='img/contribuez.svg'></img></a>"))  
 
 
 # PIN

@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/form.css"/>
+</head>
 <body>
+<div class="container">  
+    <form action="https://formspree.io/nicolas.lambert@cnrs.fr" method="POST" id="contact"/>
 
-<h2>Merci de référencer très précisément la citation que vous souhaitez ajouter. Celle-ci sera intégrée à la carte lors de la prochaine mise à jour.</h2>
+    <h3>Merci de référencer très précisément la citation que vous souhaitez ajouter à <b>MapQuote</b>.</h3>
+    <h4>(Elle sera visible lors de la prochaine mise à jour)</h4>
+    <fieldset>
+      <input placeholder="Titre du livre" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Auteur" type="text" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Année de parution (optionnel)" type="text" tabindex="3">
+    </fieldset>
+    <fieldset>
+      <input placeholder="Editeur (optionnel)" type="text" tabindex="4">
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Copiez votre citation ici" tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Envoyer</button>
+    </fieldset>
+    <p class="copyright">Voir la carte interactive sur <a href="https://neocarto.github.io/mapquote/" target="_blank" title="mapqoute">neocarto.github.io/mapquote</a></p>
+    <p class="copyright">Formulaire web conçu par <a href="https://colorlib.com" target="_blank">Colorlib</a> et <a href="https://formspree.io/" target="_blank">formspree.io</a></p>
+  </form>
+</div>
 
-<form action="https://formspree.io/nicolas.lambert@cnrs.fr" method="POST" id="usrform"/>
-Titre du livre: <input type="text" name="title"><br/>
-Auteur : <input type="text" name="title"><br/>
-Année de parution : <input type="text" name="année"><br/>
-Editeur : <input type="text" name="editor"><br/>
-Citation : <textarea name="quote" form="usrform">Enter text here...</textarea><br/>
-<input type="submit" value="Send">
-</form>
 
 
 </body>
 </html>
+
+
+
+
+
 
