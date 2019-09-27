@@ -49,7 +49,7 @@ quotes$labelhtml <- paste0(
 
 
 title <- tags$div(includeCSS("../css/maptitle.css"), HTML("<i>MapQuote</i>"))  
-source <- tags$div(includeCSS("../css/mapnote.css"), HTML(paste0("Source : <b>N. Lambert</b>, <b>F. Bahoken</b> et contributeurs.trices [<a href =='contributors.html'>voir</a>]. Mise à jour : ",Sys.Date(), " (",dim(bib)[1]," livres et ", dim(quotes)[1]," citations)" )))
+source <- tags$div(includeCSS("../css/mapnote.css"), HTML(paste0("Source : <b>N. Lambert</b>, <b>F. Bahoken</b> et contributeurs.trices [<a href = 'contributors.html'>voir</a>]. Mise à jour : ",Sys.Date(), " (",dim(bib)[1]," livres et ", dim(quotes)[1]," citations)" )))
 contrib <- tags$div(includeCSS("../css/contrib.css"), HTML("<a href='form.html'><img src='img/contribuez.svg'></img></a>"))  
 
 
@@ -85,7 +85,7 @@ x2$alph <- paste(x2$nom,x2$prenom, sep='')
 x2 <- x2[order(x2$alph),]
 x2 <- paste(x2$prenom, x2$nom, sep= " ")
 x2 <- paste(x2, collapse=", ")
-x2
+
 x3 <- "</p><hr/><p class='copyright'><br/>\n
 Retournez à la carte<br/>\n
 <a href='https://neocarto.github.io/mapquote/' target='_blank' title='mapqoute'>neocarto.github.io/mapquote</a>\n
