@@ -14,11 +14,12 @@ bib$id <- row.names(bib)
 bib$author <- sub("\\}", "", bib$author)
 bib$author <- sub("\\{", "", bib$author)
 
+
+
 q <- read.csv("../data/quotes.csv", stringsAsFactors=FALSE) 
 loc <- read.csv("../data/authors.csv", stringsAsFactors=FALSE) 
 quotes <- merge(x = q, y = bib, by.x = "book", by.y = "id", all.y=T)
 quotes <- merge(x = quotes, y = loc, by.x = "author", by.y = "author", all.y=T)
-
 words <- read.csv("../data/words.csv", stringsAsFactors=FALSE)
 words <- words$words
 
@@ -48,7 +49,7 @@ quotes$labelhtml <- paste0(
 
 
 title <- tags$div(includeCSS("../css/maptitle.css"), HTML("<i>MapQuote</i>"))  
-source <- tags$div(includeCSS("../css/mapnote.css"), HTML(paste0("Data & Map designed by <b>Nicolas Lambert</b> & <b>Françoise Bahoken</b>. Last update: ",Sys.Date())))
+source <- tags$div(includeCSS("../css/mapnote.css"), HTML(paste0("Carte conçue par <b>Nicolas Lambert</b> & <b>Françoise Bahoken</b>. Mise à jour : ",Sys.Date(), " (",dim(bib)[1]," livres et ", dim(quotes)[1]," citations)" )))
 contrib <- tags$div(includeCSS("../css/contrib.css"), HTML("<a href='form.html' target='_blank'><img src='img/contribuez.svg'></img></a>"))  
 
 
