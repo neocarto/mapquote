@@ -1,29 +1,33 @@
-author,location,lat,lng
-Denis Guedj,né à Seitif (Algérie),36.193805,5.414035
-Philippe Claudel,né à Dombasle-sur-Meurthe (France),48.618872,6.354941
-Amélie Nothomb,née à Etterbeek (Belgique),50.832577,4.393031
-François Bégaudeau,né à Luçon (France),46.454626,-1.166092
-Didier Van Cauwelaert,né à Nice (France),43.708352,7.265185
-Jules Verne, né à Nantes (France),47.216264, -1.554937
-Lewis Caroll, né à Daresbury (Royaume-Uni),53.340912, -2.633030
-Robert Louis Stevenson, né à Édimbourg (Ecosse), 55.952117, -3.187803
-Franz Kafka, né à Prague (Autriche-Hongrie),50.073196, 14.438186
-Mark Twain, né à Florida (Missouri), 39.491609, -91.790503
-Alexandre Jardin, né à Neuilly-sur-Seine (France), 48.885212, 2.266768
-David Vann, né sur l'île Adak (Alaska), 51.768184, -176.625315
-Yukio Mishima, né à Shinjuku - Tokyo (Japon), 35.696503, 139.714520
-Hugh Howey, né à Monroe (Caroline du Nord), 34.985365, -80.550638
-Virginie Despentes, née à Nancy (France), 48.691240, 6.183568
-John Green, né à Indianapolis (Indiana), 39.775423, -86.159541
-Alessandro Baricco, né à Turin (Italie), 45.069560, 7.684871
-Jim Harrison, né à Grayling (Michigan), 44.661620, -84.714280
-Sorj Chalandon, né à Tunis (Tunisie), 36.809108, 10.183816
-Hitonari Tsuji, né à Tokyo (Japon), 35.681535, 139.770080
-Margaret Atwood, née à Ottawa (Canada), 45.420371, -75.705677
-Philippe Pujol, né à Paris, 48.856247, 2.346691
-Stefan Zweig, né à Vienne (Autriche-Hongrie), 48.210015, 16.382384
-Olivier Guez, né à Strasbourg (France), 48.572485, 7.750424
-Alexandre Dumas, né à Villers-Cotterêts (France), 49.251443, 3.094576
-Victor Hugo, né à Besançon (France), 47.237098, 6.022534
-Guy de Maupassant, né à Tourville-sur-Arques (France), 49.858453, 1.093380
-Bernard Arcand, né à Capitale-Nationale (Québec), 46.886220, -71.255513
+"author","location","lat","lng"
+"Alessandro Baricco","né à Turin (Italie)",45.06956,7.684871
+"Alexandre Dumas","né à Villers-Cotterêts (France)",49.251443,3.094576
+"Alexandre Jardin","né à Neuilly-sur-Seine (France)",48.885212,2.266768
+"Amélie Nothomb","née à Etterbeek (Belgique)",50.832577,4.393031
+"Antoine de Saint-Éxupéry","né à Lyon (France)",45.762704,4.834096
+"Bernard Arcand","né à Capitale-Nationale (Québec)",46.88622,-71.255513
+"Charles Dickens","né à Landport (Royaume-Uni)",50.812726,-1.086714
+"David Vann","né sur l'île Adak (Alaska)",51.768184,-176.625315
+"Denis Guedj","né à Seitif (Algérie)",36.193805,5.414035
+"Didier Van Cauwelaert","né à Nice (France)",43.708352,7.265185
+"François Bégaudeau","né à Luçon (France)",46.454626,-1.166092
+"François Rabelais","né à Chinon (France)",47.169663,0.242912
+"Franz Kafka","né à Prague (Autriche-Hongrie)",50.073196,14.438186
+"Guy de Maupassant","né à Tourville-sur-Arques (France)",49.858453,1.09338
+"Hitonari Tsuji","né à Tokyo (Japon)",35.681535,139.77008
+"Honoré de Balzac","né à Tours (France=)",47.394928,0.684983
+"Hugh Howey","né à Monroe (Caroline du Nord)",34.985365,-80.550638
+"Jim Harrison","né à Grayling (Michigan)",44.66162,-84.71428
+"John Green","né à Indianapolis (Indiana)",39.775423,-86.159541
+"Jules Verne","né à Nantes (France)",47.216264,-1.554937
+"Lewis Caroll","né à Daresbury (Royaume-Uni)",53.340912,-2.63303
+"Margaret Atwood","née à Ottawa (Canada)",45.420371,-75.705677
+"Mark Twain","né à Florida (Missouri)",39.491609,-91.790503
+"Olivier Guez","né à Strasbourg (France)",48.572485,7.750424
+"Philippe Claudel","né à Dombasle-sur-Meurthe (France)",48.618872,6.354941
+"Philippe Pujol","né à Paris",48.856247,2.346691
+"Robert Louis Stevenson","né à Édimbourg (Ecosse)",55.952117,-3.187803
+"Sorj Chalandon","né à Tunis (Tunisie)",36.809108,10.183816
+"Stefan Zweig","né à Vienne (Autriche-Hongrie)",48.210015,16.382384
+"Victor Hugo","né à Besançon (France)",47.237098,6.022534
+"Virginie Despentes","née à Nancy (France)",48.69124,6.183568
+"Yukio Mishima","né à Shinjuku - Tokyo (Japon)",35.696503,139.71452
