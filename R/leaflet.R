@@ -80,8 +80,12 @@ x1 <- "<!DOCTYPE html>\n
 <form action='https://formspree.io/nicolas.lambert@cnrs.fr' method='POST' id='contact'/>\n
 <h3>Ils et elles ont contribué au projet <b>MapQuote</b>.</h3><br/><hr/><p>\n"
 
-x2 <- "Nicolas Lambert, Françoise Bahoken"
-
+x2 <- read.csv("../data/contributors.csv", stringsAsFactors=FALSE)
+x2$alph <- paste(x2$nom,x2$prenom, sep='')
+x2 <- x2[order(x2$alph),]
+x2 <- paste(x2$prenom, x2$nom, sep= " ")
+x2 <- paste(x2, collapse=", ")
+x2
 x3 <- "</p><hr/><p class='copyright'><br/>\n
 Retournez à la carte<br/>\n
 <a href='https://neocarto.github.io/mapquote/' target='_blank' title='mapqoute'>neocarto.github.io/mapquote</a>\n
