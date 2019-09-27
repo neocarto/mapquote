@@ -49,8 +49,8 @@ quotes$labelhtml <- paste0(
 
 
 title <- tags$div(includeCSS("../css/maptitle.css"), HTML("<i>MapQuote</i>"))  
-source <- tags$div(includeCSS("../css/mapnote.css"), HTML(paste0("Carte conçue par <b>Nicolas Lambert</b> & <b>Françoise Bahoken</b>. Mise à jour : ",Sys.Date(), " (",dim(bib)[1]," livres et ", dim(quotes)[1]," citations)" )))
-contrib <- tags$div(includeCSS("../css/contrib.css"), HTML("<a href='form.html' target='_blank'><img src='img/contribuez.svg'></img></a>"))  
+source <- tags$div(includeCSS("../css/mapnote.css"), HTML(paste0("Source : <b>N. Lambert</b>, <b>F. Bahoken</b> et contributeurs.trices [<a href =='contributors.html'>voir</a>]. Mise à jour : ",Sys.Date(), " (",dim(bib)[1]," livres et ", dim(quotes)[1]," citations)" )))
+contrib <- tags$div(includeCSS("../css/contrib.css"), HTML("<a href='form.html'><img src='img/contribuez.svg'></img></a>"))  
 
 
 # PIN
@@ -70,3 +70,27 @@ m <- leaflet(quotes) %>%
   addControl(contrib, className="map-contrib")
 m
 
+# CONTRIB PAGE
+x1 <- "<!DOCTYPE html>\n
+<html>\n<head>\n
+<link rel='stylesheet' type='text/css' href='css/form.css'/>\n
+</head>\n
+<body>\n
+<div class='container'>\n
+<form action='https://formspree.io/nicolas.lambert@cnrs.fr' method='POST' id='contact'/>\n
+<h3>Ils et elles ont contribué au projet <b>MapQuote</b>.</h3><br/><hr/><p>\n"
+
+x2 <- "Nicolas Lambert, Françoise Bahoken"
+
+x3 <- "</p><hr/><p class='copyright'><br/>\n
+Retournez à la carte<br/>\n
+<a href='https://neocarto.github.io/mapquote/' target='_blank' title='mapqoute'>neocarto.github.io/mapquote</a>\n
+</p></div>\n
+</body>\n
+</html>"
+
+x <- paste0(x1,x2,x3)
+
+write(x, file = "../contributors.html",
+      ncolumns = if(is.character(x)) 1 else 5,
+      append = FALSE, sep = " ")
