@@ -49,6 +49,7 @@ words <- words$words
 # POPUP FORMATING -----------------------------------------------------------
 
 
+quotes$publisher[is.na(quotes$publisher)] <- "(éditeur inconnu)"
 
 col <- "#fce303"
 for (i in 1:length(words)){
