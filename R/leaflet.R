@@ -91,7 +91,7 @@ m <- leaflet(quotes) %>%
   addControl(source, className="map-note") %>%
   addControl(contrib, className="map-contrib")
 
-saveWidget(m, file="index.html", selfcontained = TRUE)
+saveWidget(m, file="index.html", title = "MapQuote", selfcontained = TRUE)
 file.move("index.html", "../", overwrite = TRUE)
 
 # BUILDING CONTRIB PAGE -----------------------------------------------------------
