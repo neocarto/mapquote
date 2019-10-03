@@ -12,6 +12,8 @@ library(filesstrings)
 
 # SORT AND RESAVE DATA FILE ------------------------------------------------------------
 
+
+
 quotes <- read.csv("../data/quotes.csv", stringsAsFactors=FALSE) 
 quotes <- quotes[order(quotes$book),]
 write.csv(quotes,"../data/quotes.csv",row.names=FALSE)
@@ -26,8 +28,10 @@ colnames(words) <- "words"
 write.csv(words,"../data/words.csv",row.names=FALSE)
 
 books <- ReadBib(file = "../data/biblio.bib")
+
+View(books)
 books <- sort(books, sorting = "nyt")
-WriteBib(books, file = "../data/biblio.bib", append = FALSE, verbose = F, Encoding = "utf8")
+#WriteBib(books, file = "../data/biblio.bib", append = FALSE, verbose = F, Encoding = "utf8")
 
 
 # DATA IMPORT  ------------------------------------------------------------

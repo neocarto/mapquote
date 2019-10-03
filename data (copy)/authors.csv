@@ -5,21 +5,18 @@
 "Alexandre Dumas","né à Villers-Cotterêts (France)",49.251443,3.094576
 "Alexandre Jardin","né à Neuilly-sur-Seine (France)",48.885212,2.266768
 "Amélie Nothomb","née à Etterbeek (Belgique)",50.832577,4.393031
-"Amin Maalouf","né à Beyrouth (Liban)",33.895194,35.50274
 "André Breton","né à Tinchebray (France)",48.764287,-0.729994
 "Antoine de Saint-Éxupéry","né à Lyon (France)",45.762704,4.834096
 "Anton Tchekhov","né à Taganrog (empire Russe)",47.243583,38.871747
 "Arthur C. Clarke","né à Minehead (Royaume-Uni)",51.204278,-3.481126
 "Arthur Conan Doyle","né à Édimbourg (Ecosse)",55.9525,-3.185398
 "Arthur Koestler","né à Budapest (Hongrie)",47.495498,19.051349
-"August Derleth","né à Sauk City (Wisconsin)",43.271023,-89.730303
 "Bernard Arcand","né à Capitale-Nationale (Québec)",46.88622,-71.255513
 "Bernard Werber","né à Toulouse (France)",43.60612,1.443836
 "Charles Beaudelaire","né à Paris (France)",48.856247,2.346691
 "Charles Dickens","né à Landport (Royaume-Uni)",50.812726,-1.086714
 "Christopher Priest","né à Cheadle (Royaume-Uni)",53.394297,-2.213183
 "Dan Simmons","né à Peoria (Illinois)",40.69529,-89.597793
-"Danielle Thiéry","née à Viévigne (France)",47.435929,5.23173
 "David Vann","né sur l'île Adak (Alaska)",51.768184,-176.625315
 "Denis Guedj","né à Seitif (Algérie)",36.193805,5.414035
 "Didier Van Cauwelaert","né à Nice (France)",43.708352,7.265185
@@ -32,7 +29,6 @@
 "François Bégaudeau","né à Luçon (France)",46.454626,-1.166092
 "François Rabelais","né à Chinon (France)",47.169663,0.242912
 "Franz Kafka","né à Prague (Autriche-Hongrie)",50.073196,14.438186
-"Fred Vargas","née à Paris (France)",48.856247,2.346691
 "Frédéric Jaccaud","né à Lausanne (Suisse)",46.519472,6.633259
 "Gaston Leroux","né à Paris (France)",48.856247,2.346691
 "George Orwell","né à Motihari (Inde)",26.646605,84.901736
@@ -43,11 +39,9 @@
 "Hermann Hesse","né à Calw (Allemagne)",48.712613,8.747003
 "Hitonari Tsuji","né à Tokyo (Japon)",35.681535,139.77008
 "Honoré de Balzac","né à Tours (France=)",47.394928,0.684983
-"Howard Phillips Lovecraft","né à Providence (Rhode Island)",41.823761,-71.415168
 "Hugh Howey","né à Monroe (Caroline du Nord)",34.985365,-80.550638
 "Isaac Asimov","né à New York (État de New York)",40.712395,-74.003532
 "Italo Calvino","né à Santiago de las Vegas (Cuba)",22.970059,-82.38588
-"Jean-Jacques Rousseau","né à Genève (Suisse)",46.203712,6.143401
 "Jean-Luc Luciani","né à Marseille (France)",43.295723,5.375723
 "Jim Harrison","né à Grayling (Michigan)",44.66162,-84.71428
 "John Green","né à Indianapolis (Indiana)",39.775423,-86.159541
@@ -65,8 +59,6 @@
 "Michel Bussi","né à Louviers (France)",49.215006,1.170064
 "Michel Houellebecq","né à Saint-Pierre (Réunion)",-21.335784,55.473537
 "Miguel de Cervantes","né à Alcalá de Henares (Espagne)",40.48081,-3.363937
-"Nicolas de Condorcet","né à Ribemont (France)",49.795619,3.460547
-"Nicolas Fargues","né à Meulan-en-Yvelines (France)",49.011489,1.919855
 "Olivier Guez","né à Strasbourg (France)",48.572485,7.750424
 "Patrick Deville","né à Saint-Brevin-les-Pins (France)",47.246796,-2.158262
 "Paul Féval","né à Rennes (France)",48.117047,-1.676608
@@ -74,7 +66,6 @@
 "Philip K. Dick","né à Chicago (Illinois)",41.877447,-87.626252
 "Philippe Claudel","né à Dombasle-sur-Meurthe (France)",48.618872,6.354941
 "Philippe Pujol","né à Paris (France)",48.856247,2.346691
-"Pierre Mac Orlan","né à Péronne (France)",49.933258,2.934113
 "Ray Bradbury","né à Waukegan (Illinois)",42.363847,-87.851018
 "Raymond Queneau","né au Havre (France)",49.494217,0.112299
 "René Barjavel","né à  Nyons (France)",44.361065,5.140444
@@ -82,8 +73,6 @@
 "René Goscinny","né à Paris (France)",48.856247,2.346691
 "Robert Desnos","né à Paris (France)",48.856247,2.346691
 "Robert Louis Stevenson","né à Édimbourg (Ecosse)",55.9525,-3.185398
-"Robert Merle","né à Tébessa (Algérie)",35.415635,8.10368
-"Robert Musil","né à Klagenfurt (Autriche)",46.636571,14.306912
 "Robert Silverberg","né à New York (État de New York)",40.712395,-74.003532
 "Robin Hobb","née à Berkeley (Californie)",37.871141,-122.272253
 "Samuel Beckett","né à Foxrock (Irlande)",53.266939,-6.183881
@@ -99,5 +88,16 @@
 "Victor Hugo","né à Besançon (France)",47.237098,6.022534
 "Vincent Van Gogh","né à Groot Zundert (Pays-Bas)",51.469228,4.656631
 "Virginie Despentes","née à Nancy (France)",48.69124,6.183568
-"Voltaire","né à Paris (France)",48.856247,2.346691
 "Yukio Mishima","né à Shinjuku - Tokyo (Japon)",35.696503,139.71452
+"Jean-Jacques Rousseau","né à Genève (Suisse)",46.203712, 6.143401
+"Voltaire","né à Paris (France)",48.856247,2.346691
+"Nicolas de Condorcet","né à Ribemont (France)",49.795619,3.460547
+"Robert Musil","né à Klagenfurt (Autriche)",46.636571, 14.306912
+"Pierre Mac Orlan","né à Péronne (France)",49.933258, 2.934113
+"Amin Maalouf","né à Beyrouth (Liban)",33.895194, 35.502740
+"Nicolas Fargues","né à Meulan-en-Yvelines (France)",49.011489, 1.919855
+"Fred Vargas","née à Paris (France)",48.856247,2.346691
+"Robert Merle","né à Tébessa (Algérie)",35.415635, 8.103680
+"Howard Phillips Lovecraft","né à Providence (Rhode Island)",41.823761, -71.415168
+"Danielle Thiéry","née à Viévigne (France)",47.435929, 5.231730
+"August Derleth","né à Sauk City (Wisconsin)",43.271023, -89.730303
