@@ -28,10 +28,8 @@ colnames(words) <- "words"
 write.csv(words,"../data/words.csv",row.names=FALSE)
 
 books <- ReadBib(file = "../data/biblio.bib")
-
-View(books)
 books <- sort(books, sorting = "nyt")
-#WriteBib(books, file = "../data/biblio.bib", append = FALSE, verbose = F, Encoding = "utf8")
+WriteBib(books, file = "../data/biblio.bib", append = FALSE, verbose = F, Encoding = "utf8")
 
 
 # DATA IMPORT  ------------------------------------------------------------
