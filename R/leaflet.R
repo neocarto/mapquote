@@ -12,6 +12,8 @@ library(filesstrings)
 
 # SORT AND RESAVE DATA FILE ------------------------------------------------------------
 
+
+
 quotes <- read.csv("../data/quotes.csv", stringsAsFactors=FALSE) 
 quotes <- quotes[order(quotes$book),]
 write.csv(quotes,"../data/quotes.csv",row.names=FALSE)
@@ -49,6 +51,7 @@ words <- words$words
 # POPUP FORMATING -----------------------------------------------------------
 
 
+quotes$publisher[is.na(quotes$publisher)] <- "(éditeur inconnu)"
 
 col <- "#fce303"
 for (i in 1:length(words)){
@@ -90,7 +93,7 @@ m <- leaflet(quotes) %>%
   addControl(source, className="map-note") %>%
   addControl(contrib, className="map-contrib")
 
-saveWidget(m, file="index.html", selfcontained = TRUE)
+saveWidget(m, file="index.html", title = "MapQuote", selfcontained = TRUE)
 file.move("index.html", "../", overwrite = TRUE)
 
 # BUILDING CONTRIB PAGE -----------------------------------------------------------
@@ -102,7 +105,7 @@ x1 <- "<!DOCTYPE html>\n
 <body>\n
 <div class='container'>\n
 <form action='https://formspree.io/nicolas.lambert@cnrs.fr' method='POST' id='contact'/>\n
-<h3>Ils et elles ont contribué au projet <b>MapQuote</b>.</h3><br/><hr/><p>\n"
+<h3>Ils et elles ont contribué au projet <b>MapQuote</b>.</h3><br/><hr/><h4>\n"
 
 x2 <- read.csv("../data/contributors.csv", stringsAsFactors=FALSE)
 x2$alph <- paste(x2$nom,x2$prenom, sep='')
@@ -110,7 +113,7 @@ x2 <- x2[order(x2$alph),]
 x2 <- paste(x2$prenom, x2$nom, sep= " ")
 x2 <- paste(x2, collapse=", ")
 
-x3 <- "</p><hr/><p class='copyright'><br/>\n
+x3 <- "</h4><hr/><p class='copyright'><br/>\n
 Retournez à la carte<br/>\n
 <a href='https://neocarto.github.io/mapquote/' target='_blank' title='mapqoute'>neocarto.github.io/mapquote</a>\n
 </p></div>\n
