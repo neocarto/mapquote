@@ -1,4 +1,5 @@
 "author","location","lat","lng"
+"Émile Zola","né à Paris (France)",48.856247,2.346691
 "Agnès Martin-Lugand","née à Saint-Malo (France)",48.648741,-2.018459
 "Alaa El Aswany","né au Caire (Egypte)",30.045963,31.236661
 "Alain Damasio","né à Lyon (France)",45.762704,4.834096
@@ -11,8 +12,8 @@
 "Amélie Nothomb","née à Etterbeek (Belgique)",50.832577,4.393031
 "Amin Maalouf","né à Beyrouth (Liban)",33.895194,35.50274
 "André Breton","né à Tinchebray (France)",48.764287,-0.729994
-"Antoine de Saint-Exupéry","né à Lyon (France)",45.762704,4.834096
 "Antoine de Saint-Éxupéry","né à Lyon (France)",45.762704,4.834096
+"Antoine de Saint-Exupéry","né à Lyon (France)",45.762704,4.834096
 "Anton Tchekhov","né à Taganrog (empire Russe)",47.243583,38.871747
 "Arthur C. Clarke","né à Minehead (Royaume-Uni)",51.204278,-3.481126
 "Arthur Conan Doyle","né à Édimbourg (Ecosse)",55.9525,-3.185398
@@ -38,17 +39,16 @@
 "Elif Shafak","née à Strasbourg (France)",48.572485,7.750424
 "Elizabeth Ann Scarborough","née à Kansas City (Missouri)",39.092327,-94.581216
 "Elsa Morante","née à Rome (Italie)",41.903812,12.494097
-"Émile Zola","né à Paris (France)",48.856247,2.346691
 "Emmanuel Bove","né à Paris (France)",48.856247,2.346691
 "Emmanuel Kant","né à kaliningrad (Russie)",54.710745,20.505387
 "Erik Orsenna","né à Paris (France)",48.856247,2.346691
 "Ernest Cline","né à Ashland (Ohio)",40.860675,-82.311667
 "Fiodor Dostoïevski","né à Moscou (Russie)",55.719473,37.62481
+"Frédéric Jaccaud","né à Lausanne (Suisse)",46.519472,6.633259
 "François Bégaudeau","né à Luçon (France)",46.454626,-1.166092
 "François Rabelais","né à Chinon (France)",47.169663,0.242912
 "Franz Kafka","né à Prague (Autriche-Hongrie)",50.073196,14.438186
 "Fred Vargas","née à Paris (France)",48.856247,2.346691
-"Frédéric Jaccaud","né à Lausanne (Suisse)",46.519472,6.633259
 "Gabriel García Márquez","né à Aracataca (Colombie)",10.591039,-74.185502
 "Gaston Leroux","né à Paris (France)",48.856247,2.346691
 "George Orwell","né à Motihari (Inde)",26.646605,84.901736
@@ -70,7 +70,6 @@
 "Italo Calvino","né à Santiago de las Vegas (Cuba)",22.970059,-82.38588
 "Italo Svevo","né à Trieste (Italie)",45.648681,13.776447
 "J. R. R. Tolkien","né à Bloemfontein (Afrique du Sud)",-29.10547,26.217024
-"Jean Giono","né à Manosque (France)",43.834982,5.788368
 "Jean-Christophe Rufin","né à Bourges (France)",47.079864,2.401052
 "Jean-Claude Izzo","né à Marseille (France)",43.295723,5.375723
 "Jean-Jacques Rousseau","né à Genève (Suisse)",46.203712,6.143401
@@ -78,6 +77,7 @@
 "Jean-Marie-Gustave Le Clézio"," né à Nice (France)",43.708352,7.265185
 "Jean-Paul Sartre","né à Paris (France)",48.856247,2.346691
 "Jean-Philippe Toussaint","né à Bruxelles (Belgique)",50.84866,4.349977
+"Jean Giono","né à Manosque (France)",43.834982,5.788368
 "Jeanne Galzy","née à Montpellier (France)",43.610384,3.875192
 "Jens Christian Grøndahl","né à Kongens Lyngby (Danemark)",55.780711,12.514997
 "Jim Harrison","né à Grayling (Michigan)",44.66162,-84.71428
@@ -90,10 +90,10 @@
 "Jules Romains","né à Saint-Julien-Chapteuil (France)",45.036,4.061799
 "Jules Verne","né à Nantes (France)",47.216264,-1.554937
 "Ken Kesey","né à La Junta (Colorado)",37.984697,-103.542807
-"Lauren Beukes","née à Johannesbourg (Afrique du Sud)",-26.206304,28.047259
-"Laurence Sterne","né à Clonmel (Irlande)",52.355615,-7.690746
 "Léon Tolstoi","né à Iasnaïa Poliana (Empire russe)",54.114723,37.515467
 "Léon Werth","né à Remiremont (France)",48.002256,6.581336
+"Lauren Beukes","née à Johannesbourg (Afrique du Sud)",-26.206304,28.047259
+"Laurence Sterne","né à Clonmel (Irlande)",52.355615,-7.690746
 "Lewis Carroll","né à Daresbury (Royaume-Uni)",53.340912,-2.63303
 "Liu Cixin","né à Yangquan (Chine)",37.859185,113.58284
 "Lois McMaster Bujold","née à Columbus (Ohio)",39.961747,-82.999798
