@@ -61,7 +61,7 @@ for (i in 1:length(words)){
   }
 
 quotes$labelhtml <- paste0(
-  "<div class = 'leaflet-popup-scrolled' style='max-width:300px;max-height:400px' align='center'>",
+  "<div width='300px' align='center'>",
   "<h2>",
   "« ",quotes$quote," »",
   "</h2>",
