@@ -18,6 +18,8 @@ So there are many potential citations.
 This project is intended to be a **collective** one. It takes the form of an interactive map based on the cluster method. It
 It is based on the _JavaScript Leaflet library_ and has been entirely designed in _R_ language.
 
->> Feel free to contribute by filling out this form:_https://f.hypotheses.org/wp-content/blogs.dir/1381/files/2019/09/download.svg_
+To see the map, go to [neocarto.github.io/mapquote](https://neocarto.github.io/mapquote/).
+
+>> Feel free to contribute by filling out this form: [neocarto.github.io/mapquote/form](https://neocarto.github.io/mapquote/form.html)
 
 For a French version, go directly to Neocarto: _https://neocarto.hypotheses.org/6502_
