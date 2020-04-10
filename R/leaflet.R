@@ -127,3 +127,4 @@ write(x, file = "../contributors.html",
       append = FALSE, sep = " ")
 
 View(quotes)
+
